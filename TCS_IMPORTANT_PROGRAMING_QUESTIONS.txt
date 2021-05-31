@@ -1,0 +1,286 @@
+STRING REVERSE:
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j,count=0;
+    char str[100],rev[100];
+    printf("Enter string:");
+    scanf("%s",&str);
+    printf("reverse string:");
+    while(str[count]!='\0')
+    {
+        count++;
+    }j=count-1;
+    {
+    for(i=0;i<count;i++)
+    {
+        rev[i]=str[j];
+        j--;
+    }
+    }
+    printf("%s",rev);
+    return 0;
+}
+
+______________________________________________
+Reverse a Number:
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,num,rem,rev=0;
+    printf("enter number:");
+    scanf("%d",&n);
+    printf("reversed number:");
+    while(n!=0){
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+        
+    }printf("%d",rev);
+    return 0;
+}
+_____________________________________________
+
+Palindrome:
+
+#include <stdio.h>
+
+int main()
+{
+    int n,N,i,rem,rev=0;
+    printf("enter number:");
+    scanf("%d",&n);
+    N=n;
+    printf("reversed number:");
+    while(n!=0){
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+        
+    }printf("%d",rev);
+    if(N==rev){
+        printf("\npalindrome");
+    }else{
+        printf("\nnot palindrome");
+    }
+    return 0;
+}
+
+______________________________________________
+Prime Number.:
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,flag=0;
+    printf("enter number:");
+    scanf("%d",&n);
+    for(i=2;i<=n/2;i++){
+        if(n%i==0){
+            flag=1;
+            break;
+        }
+    }
+    if(flag==0){
+        printf("prime number");
+    }else{
+        printf("not prime number:");
+    }
+    
+    return 0;
+}
+
+
+_______________________________________________
+Leap Year:
+
+
+
+#include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+   
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+   
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   
+   else {
+      printf("%d is not a leap year.", year);
+   }
+
+   return 0;
+}
+
+____________________________________________
+
+Greatest among 10 numbers:
+
+#include <stdio.h>
+int main() {
+   int arr[10],max,i;
+   printf("Enter 10 numbers: ");
+   for(i=0;i<10;i++){
+   scanf("%d", &arr[i]);
+   }
+   max=arr[0];
+   for(i=0;i<10;i++){
+       if(arr[i]>max){
+          max=arr[i];
+       }
+   }
+   printf("%d",max);
+   return 0;
+}
+_______________________________________________
+
+FIBBONACI SERIES:
+
+#include <stdio.h>
+int main() {
+   int a=0,b=1,c,n,i;
+   c=a+b;
+   printf("enter number of terms:");
+   scanf("%d",&n);
+   
+   
+   printf("%d,%d,",a,b);
+   for(i=1;i<=n;i++){
+       printf("%d, ",c);
+       a=b;
+       b=c;
+       c=a+b;
+   }
+   
+   return 0;
+}
+_____________________________________________
+HCF / GCD:
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,i,gcd;
+    printf("enter two integers:");
+    scanf("%d %d",&a,&b);
+    for(i=1;i<=a && i<=b;i++){
+       if(a%i==0 && b%i==0){
+           gcd=i;
+       } 
+    }printf("%d",gcd);
+    return 0;
+}
+
+
+_____________________________________________
+
+FACTORIAL:
+
+#include <stdio.h>
+
+int main()
+{
+    int a,fact=1,i;
+    printf("enter  integer:");
+    scanf("%d",&a);
+  for(i=1;i<=a;i++){
+        fact=fact*i;
+        
+    }
+    printf("%d",fact);
+    return 0;
+}
+
+
+_____________________________________________
+Decimal to Binary & vice versa:
+
+_____________________________________________
+
+SWAP TWO NUMBERS:
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,temp,fact=1,i;
+    printf("enter two  integer:");
+    scanf("%d %d",&a,&b);
+     temp=a;
+     a=b;
+     b=temp;
+    printf("%d %d",a,b);
+    return 0;
+}
+
+_____________________________________________
+AMSTROG NUMBERS:
+
+#include <stdio.h>
+int main() {
+    int num, originalNum, remainder, result = 0;
+    printf("Enter a three-digit integer: ");
+    scanf("%d", &num);
+    originalNum = num;
+
+    while (originalNum != 0) {
+       // remainder contains the last digit
+        remainder = originalNum % 10;
+        
+       result += remainder * remainder * remainder;
+        
+       // removing last digit from the orignal number
+       originalNum /= 10;
+    }
+
+    if (result == num)
+        printf("%d is an Armstrong number.", num);
+    else
+        printf("%d is not an Armstrong number.", num);
+
+    return 0;
+}
+
+S
+
+_____________________________________________
+Odd-Even Number:
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a%2==0){
+        printf("even");
+    }else{
+        printf("odd");
+    }
+
+    return 0;
+}
+
+_____________________________________________
+
+
+
